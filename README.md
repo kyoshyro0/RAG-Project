@@ -5,6 +5,8 @@ Dự án RAG là một công cụ giúp trả lời các câu hỏi học thuậ
 ## Note:
 Model được sử dụng vi-gemma-2b-RAG cần có GPU có bộ nhớ lớn hơn 8G để chạy(khuyến khích 24G)
 
+Link Model: https://drive.google.com/drive/folders/18664QHHWV0GLp8KZm_D1f-rNuLMtC0bD?usp=sharing
+
 ## Cài đặt
 Làm theo các bước sau để cài đặt môi trường và chạy project.
 
