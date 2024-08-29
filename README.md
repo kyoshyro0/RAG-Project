@@ -31,5 +31,5 @@ Làm theo các bước sau để cài đặt môi trường và chạy project.
    pip install -r requirements.txt
 5. Run code
    ```bash
-   uvicorn src.app:app --host "0.0.0.0" --post 5000 --reload
+   uvicorn src.app:app --host "0.0.0.0" --port 5000 --reload
 
