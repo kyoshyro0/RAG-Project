@@ -1,17 +1,17 @@
 # RAG Project
 
-Dự án RAG là một công cụ giúp trả lời các câu hỏi học thuật được truy vấn từ nguồn tài liệu là các bài báo khoa học.
+The RAG project is a web app that helps answer academic questions queried from a source of scientific articles.
 
 ## Note:
-Model được sử dụng vi-gemma-2b-RAG cần có GPU có bộ nhớ lớn hơn 8G để chạy(khuyến khích 24G)
+The model used is vi-gemma-2b-RAG which requires a GPU with more than 8G of memory to run.
 
 Link Model: https://drive.google.com/drive/folders/18664QHHWV0GLp8KZm_D1f-rNuLMtC0bD?usp=sharing
 
 ## Cài đặt
-Làm theo các bước sau để cài đặt môi trường và chạy project.
+Follow these steps to setup the environment and run the project.
 
 ### Yêu cầu hệ thống
-- Python 3.10 hoặc mới hơn
+- Python 3.10 or later
 - pip
 
 ### Hướng dẫn cài đặt
