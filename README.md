@@ -7,26 +7,26 @@ The model used is vi-gemma-2b-RAG which requires a GPU with more than 8G of memo
 
 Link Model: https://drive.google.com/drive/folders/18664QHHWV0GLp8KZm_D1f-rNuLMtC0bD?usp=sharing
 
-## Cài đặt
+## Setting
 Follow these steps to setup the environment and run the project.
 
-### Yêu cầu hệ thống
+### System Requirements
 - Python 3.10 or later
 - pip
 
-### Hướng dẫn cài đặt
-1. Clone kho lưu trữ này:
+### Installation instructions
+1. Clone this repository:
    ```bash
    git clone https://github.com/kyoshyro0/RAG-Project.git
-2. Chuyển vào thư mục dự án:
+2. Move to the project folder:
    ```bash
    cd RAG-Project
-3. Tạo và kích hoạt môi trường ảo:
+3. Create and activate virtual environments:
    ```bash
    python3 -m venv venv
-   source venv/bin/activate  # Trên macOS/Linux
-   .\venv\Scripts\activate    # Trên Windows
-4. Cài đặt các thư viện:
+   source venv/bin/activate  # On macOS/Linux
+   .\venv\Scripts\activate    # On Windows
+4. Install frameworks:
    ```bash
    pip install -r requirements.txt
 5. Run code
