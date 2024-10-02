@@ -1,35 +1,52 @@
 # RAG Project
 
-Dự án RAG là một công cụ giúp trả lời các câu hỏi học thuật được truy vấn từ nguồn tài liệu là các bài báo khoa học.
+The RAG project is a web app that helps answer academic questions queried from a source of scientific articles.
 
 ## Note:
-Model được sử dụng vi-gemma-2b-RAG cần có GPU có bộ nhớ lớn hơn 8G để chạy(khuyến khích 24G)
+The model used is Vicuna which requires a GPU with more than 8G of memory to run.
 
-Link Model: https://drive.google.com/drive/folders/18664QHHWV0GLp8KZm_D1f-rNuLMtC0bD?usp=sharing
+Link Model: https://huggingface.co/lmsys/vicuna-7b-v1.5
 
-## Cài đặt
-Làm theo các bước sau để cài đặt môi trường và chạy project.
+## Setting
+Follow these steps to setup the environment and run the project.
 
-### Yêu cầu hệ thống
-- Python 3.10 hoặc mới hơn
+### System Requirements
+- Python 3.10 or later
 - pip
 
-### Hướng dẫn cài đặt
-1. Clone kho lưu trữ này:
+### Installation instructions
+1. Clone this repository:
    ```bash
    git clone https://github.com/kyoshyro0/RAG-Project.git
-2. Chuyển vào thư mục dự án:
+2. Move to the project folder:
    ```bash
    cd RAG-Project
-3. Tạo và kích hoạt môi trường ảo:
+3. Create and activate virtual environments:
    ```bash
    python3 -m venv venv
-   source venv/bin/activate  # Trên macOS/Linux
-   .\venv\Scripts\activate    # Trên Windows
-4. Cài đặt các thư viện:
+   source venv/bin/activate  # On macOS/Linux
+   .\venv\Scripts\activate    # On Windows
+4. Install frameworks:
    ```bash
    pip install -r requirements.txt
-5. Run code
+5. Clone model:
    ```bash
-   uvicorn ./src.app:app --host "0.0.0.0" --post 5000 --reload
+   cd src/base/lmsys
+   ```
+   
+   Make sure you have git-lfs installed
+   ```bash
+   git lfs install
+   ```
+
+   Clone model
+   ```bash
+   git clone https://huggingface.co/lmsys/vicuna-7b-v1.5
+   ```
+6. Run code
+   ```bash
+   cd RAG-Project
+   ```
+   ```bash
+   uvicorn src.app:app --host "0.0.0.0" --port 5000 --reload
 
