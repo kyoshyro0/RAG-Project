@@ -11,7 +11,7 @@ nf4_config = BitsAndBytesConfig(
     bnb_4bit_compute_dtype=torch.bfloat16
 )
 
-def get_hf_llm(model_name: str = "./src/base/himmeow/vi-gemma-2b-RAG",
+def get_hf_llm(model_name: str = "./src/base/lmsys/vicuna -7b-v1.5",
                max_new_token = 1024,
                **kwargs):
     model = AutoModelForCausalLM.from_pretrained(

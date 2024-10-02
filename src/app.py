@@ -9,7 +9,7 @@ from src.rag.main import build_rag_chain, Input_QA, Output_QA
 
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
-llm = get_hf_llm(temperature=0.9)
+llm = get_hf_llm(temperature=0.8)
 genai_docs = "./data_source/generative_ai"
 
 genai_chain = build_rag_chain(llm, data_dir=genai_docs, data_type="pdf")
